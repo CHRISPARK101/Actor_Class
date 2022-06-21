@@ -13,7 +13,9 @@ void Actor::Tick()
 	{
 	case MoveType::Right:
 		if (x < 20) {
-			x++;
+			for (x = 0; x <= 20; x++) {
+				cout << " *" << endl;
+			}
 		}
 		else if (x >= 20) {
 			mType = MoveType::Up;
